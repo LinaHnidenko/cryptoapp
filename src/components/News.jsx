@@ -3,6 +3,7 @@ import { Select, Typography, Col, Card, Row } from "antd";
 import moment from "moment";
 import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
 import { useGetCryptosQuery } from "../services/cryptoApi";
+import Loader from "./Loader";
 
 const { Text, Title } = Typography;
 const { Option } = Select;
@@ -17,7 +18,7 @@ const News = ({ simplified }) => {
     count: simplified ? 6 : 30,
   });
 
-  if (!cryptoNews?.news) return "Loading...";
+  if (!cryptoNews?.news) return <Loader />;
 
   return (
     <Row gutter={[24, 24]}>
@@ -52,7 +53,12 @@ const News = ({ simplified }) => {
                 <Title className="news-title" level={4}>
                   {news.Title}
                 </Title>
-                <img src={news?.Image || demoImage} alt="news" height="100px" />
+                <img
+                  src={news?.Image || demoImage}
+                  alt="news"
+                  height="100px"
+                  width="170px"
+                />
               </div>
               <p>
                 {news.Description > 100
