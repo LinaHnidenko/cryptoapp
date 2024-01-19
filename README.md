@@ -1,1 +1,10 @@
-React App, State Management using Redux Toolkit, UI Creation using Ant Design, creating charts using Chart.js, and fetching data from multiple sources using RapidAPI while building the best Cryptocurrency App.
+Cryptoverse 🪙
+
+Cryptoverse - your comprehensive hub for cryptocurrency information. Explore detailed insights on any cryptocurrency, including the latest news updates, designed to keep you informed and engaged.
+
+Build with:
+   - React JS
+   - Ant Design
+   - RTK Query
+   - Chart.js
+👉 Live Demo: [Live Demo](https://cryptoverseappln.netlify.app/)
